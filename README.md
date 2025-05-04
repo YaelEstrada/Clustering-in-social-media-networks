@@ -4,8 +4,6 @@ This project explores clustering patterns in social media networks, revealing in
 
 Collaborators: ESTRADA DELGADO, Yael Alberto & MARQUESES, Ma. Maxine Ezekiel
 
-
-##Website
 🔗 [Project Overview Website Link](https://yaelestrada.github.io/Clustering-in-social-media-networks/)
 
 ## Dataset  
