@@ -1,5 +1,8 @@
 # Clustering in Social Media Networks  
 
+This project explores clustering patterns in social media networks, revealing insights into teenage interests and behaviors during the late 2000s.
+Coaborators ESTRADA DELGADO, Yael Alberto & MARQUESES, Ma. Maxine Ezekiel
+
 ## Dataset  
 **Students' Social Network Profile Clustering**  
 A sample of 15,000 high school students who maintained profiles on a popular social networking platform during the period 2006-2009.  
@@ -39,5 +42,4 @@ Alongside interest data, the dataset contains key demographic details for each s
 - **No strong age-based segregation**—indicating that homophily based on age is weak for the top interests.  
 
 ---  
-This project explores clustering patterns in social media networks, revealing insights into teenage interests and behaviors during the late 2000s.
 
