@@ -25,7 +25,8 @@ Alongside interest data, the dataset contains key demographic details for each s
 2. **Create data frame**  
 3. **Create a bipartite graph** to show clusters of students and their interests  
 4. **Create network graphs by gender and age** to observe how the network structure changes  
-5. **Analyze results**  
+5. **Analyze results**
+🔗 [Data Analysis Link (accesible with a Sciences Po account] https://colab.research.google.com/drive/1h4HpIRK5QdVGurWRlkdDkzGSBSb4L-mM?usp=sharing  
 
 ## Main Findings  
 - The categories related to *‘music’* are prevalent in **⅔ of the profiles**.  
