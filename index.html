@@ -113,20 +113,27 @@
 
         <section class="section">
             <h2>Network Visualizations</h2>
-            <p>Interactive visualizations of the bipartite social network showing connections between students and their interests.</p>
+            <p>Interactive visualizations of the bipartite social network showing connections between students and their interests available at the project's GitHub repository.</p>
             
             <div class="graph-container">
                 <div class="graph">
                     <div class="graph-title">Full Bipartite Network</div>
                     <!-- Replace with actual graph image or embedded visualization -->
-                    <img src="bipartite_graph.png" alt="Bipartite Network Graph">
-                    <p>Nodes colored by type: blue for students, orange for interests. Size represents connection degree.</p>
+                    <img src="bipartite.png" alt="Bipartite Network Graph">
+                    <p>Nodes colored by type: blue for male students, red for female students, orange for interests. Size represents connection degree.</p>
+                </div>
+                
+                <div class="graph">
+                    <div class="graph-title">Full Bipartite Network (Louvain community detection)</div>
+                    <!-- Replace with actual graph image or embedded visualization -->
+                    <img src="kpuvain.png" alt="Bipartite Network Graph">
+                    <p>Nodes colored by interest clusters: social attributes in grey, sports in brown, religion in light purpura, etc. Size represents connection degree.</p>
                 </div>
                 
                 <div class="graph">
                     <div class="graph-title">Network with Top Interests Highlighted</div>
                     <!-- Replace with actual graph image or embedded visualization -->
-                    <img src="highlighted_graph.png" alt="Network with Top Interests Highlighted">
+                    <img src="bipartite-highkight.png" alt="Network with Top Interests Highlighted">
                     <p>Top 10 most influential interests highlighted in green based on degree centrality.</p>
                 </div>
             </div>
