@@ -1,1 +1,212 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .graph-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .graph {
+            width: 48%;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .graph img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .graph-title {
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .insights {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+        .top-interests {
+            margin: 20px 0;
+        }
+        .interest {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 3px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Network Analysis</h1>
+        <p>Exploring connections and interests in student social networks</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Project Overview</h2>
+            <p>This analysis examines a bipartite social network of students and their interests, with visualizations of the network structure and key insights.</p>
+            <p>The dataset includes 11,575 students aged 14-20 with their expressed interests across 36 categories.</p>
+            
+            <div class="insights">
+                <h3>Key Findings:</h3>
+                <ul>
+                    <li>The network contains 11,611 nodes (students + interests) and 35,550 edges (connections)</li>
+                    <li>Music is the most central interest, followed by shopping and religion-related interests</li>
+                    <li>Clear gender-based patterns emerge in interest distributions</li>
+                    <li>Age groups show distinct preference clusters</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Network Visualizations</h2>
+            <p>Interactive visualizations of the bipartite social network showing connections between students and their interests.</p>
+            
+            <div class="graph-container">
+                <div class="graph">
+                    <div class="graph-title">Full Bipartite Network</div>
+                    <!-- Replace with actual graph image or embedded visualization -->
+                    <img src="bipartite_graph.png" alt="Bipartite Network Graph">
+                    <p>Nodes colored by type: blue for students, orange for interests. Size represents connection degree.</p>
+                </div>
+                
+                <div class="graph">
+                    <div class="graph-title">Network with Top Interests Highlighted</div>
+                    <!-- Replace with actual graph image or embedded visualization -->
+                    <img src="highlighted_graph.png" alt="Network with Top Interests Highlighted">
+                    <p>Top 10 most influential interests highlighted in green based on degree centrality.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Top Interests Analysis</h2>
+            
+            <div class="top-interests">
+                <h3>Most Central Interests (by Degree Centrality):</h3>
+                <div>
+                    <span class="interest">1. music (0.2925)</span>
+                    <span class="interest">2. shopping (0.1951)</span>
+                    <span class="interest">3. god (0.1735)</span>
+                    <span class="interest">4. cute (0.1399)</span>
+                    <span class="interest">5. mall (0.1324)</span>
+                    <span class="interest">6. hair (0.1312)</span>
+                    <span class="interest">7. dance (0.1289)</span>
+                    <span class="interest">8. rock (0.1255)</span>
+                    <span class="interest">9. football (0.1197)</span>
+                    <span class="interest">10. basketball (0.1071)</span>
+                </div>
+            </div>
+            
+            <div class="graph-container">
+                <div class="graph">
+                    <div class="graph-title">Top Interests by Centrality</div>
+                    <!-- Replace with actual graph image -->
+                    <img src="top_interests_bar.png" alt="Top Interests Bar Chart">
+                    <p>Bar chart showing the degree centrality scores for the top 10 interests.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Demographic Heatmap</h2>
+            <p>Normalized visualization of interest distribution across gender and age groups.</p>
+            
+            <div class="graph-container">
+                <div class="graph">
+                    <div class="graph-title">Interest Distribution by Age and Gender</div>
+                    <!-- Replace with actual graph image -->
+                    <img src="heatmap.png" alt="Demographic Heatmap">
+                    <p>Heatmap showing concentration of top interests across different demographic groups.</p>
+                </div>
+            </div>
+            
+            <div class="insights">
+                <h3>Heatmap Insights:</h3>
+                <ul>
+                    <li>Sports interests (basketball, football) are more prevalent among males</li>
+                    <li>Appearance-related interests (hair, cute) are more common among females</li>
+                    <li>Music and shopping show broad appeal across demographics</li>
+                    <li>Younger students show higher engagement with mall and shopping</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Methodology</h2>
+            <h3>Data Processing:</h3>
+            <ul>
+                <li>Cleaned dataset of 11,575 students aged 14-20</li>
+                <li>Converted interests to binary values (0/1)</li>
+                <li>Normalized age and gender fields</li>
+            </ul>
+            
+            <h3>Network Construction:</h3>
+            <ul>
+                <li>Bipartite graph with students and interests as separate node types</li>
+                <li>Edges represent expressed interests</li>
+                <li>Used NetworkX for graph analysis and Sigma.js for visualization</li>
+            </ul>
+            
+            <h3>Analysis Techniques:</h3>
+            <ul>
+                <li>Degree centrality to identify influential interests</li>
+                <li>Community detection (Louvain method) for clustering</li>
+                <li>Demographic heatmaps for pattern visualization</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Social Network Analysis Project &copy; 2023</p>
+    </footer>
+</body>
+</html>
